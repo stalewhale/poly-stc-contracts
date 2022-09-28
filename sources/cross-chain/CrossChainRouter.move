@@ -23,7 +23,7 @@ module Bridge::CrossChainRouter {
     const ERROR_NO_SUPPORT_METHOD: u64 = 108;
 
     // This function is meant to be invoked by the user,
-    // a certin amount teokens will be locked in the proxy contract the invoker/msg.sender immediately.
+    // a certin amount tokens will be locked in the proxy contract the invoker/msg.sender immediately.
     // Then the same amount of tokens will be unloked from target chain proxy contract at the target chain with chainId later.
     public fun lock(signer: &signer,
                     from_asset_hash: &vector<u8>,
